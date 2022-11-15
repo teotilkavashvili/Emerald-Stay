@@ -8,11 +8,11 @@ const routes: Routes = [
     redirectTo: ROUTES.HOME,
     pathMatch: 'full',
   },
-  // {
-  //   path: ROUTES.CANDIDATES,
-  //   loadChildren: () =>
-  //     import('./pages/candidates/candidate.module').then((m) => m.CandidateModule),
-  // },
+  {
+    path: ROUTES.HOME,
+    loadChildren: () =>
+      import('./home/home.module').then((m) => m.HomeModule),
+  },
 
 ];
 

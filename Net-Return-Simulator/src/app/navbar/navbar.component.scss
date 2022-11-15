@@ -43,8 +43,6 @@
                     
                     a{                       
                         position: relative;
-                        font-family: Plain,Arial,sans-serif;
-                        text-transform: inherit;
                         text-decoration: none;
                         margin: 0 0 0 5px;
                         font-weight: 300;
@@ -73,7 +71,8 @@
     flex-direction: column;
     position: relative;
     height: 100%;
-    margin-top: 170px;
+    // left: calc( 50% - 490px );
+    top: calc(50vh - 70%);
     width: 100%;
     z-index: 10;
 
@@ -89,4 +88,9 @@
         line-height: 2rem;
         text-align: center;
     }
+}
+
+.calculate{
+    position: relative;
+    top: calc(50vh - 105%);
 }
