@@ -7,6 +7,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeRoutingModule } from './home-routing.module';
+import { CalculateComponent } from '../calculate/calculate.component';
 
 @NgModule({
   imports: [
@@ -18,8 +20,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatSelectModule,
     MatIconModule,
+    HomeRoutingModule,
+    
   ],
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, CalculateComponent],
   exports:[HomeComponent]
 })
 export class HomeModule { }
