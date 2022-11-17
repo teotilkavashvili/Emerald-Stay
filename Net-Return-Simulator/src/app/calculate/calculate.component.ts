@@ -62,6 +62,7 @@ export class CalculateComponent implements OnInit {
   onClear(){
     this.submitted=false;
     this.form.reset();
+    this.isCalculate=false;
   }
 
 }
